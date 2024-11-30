@@ -1,6 +1,5 @@
 import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { servicesKey } from "../pages/ServicesPage";
 import logo from "../assets/logo-alticom.svg";
 import "../styles/navbar.css";
 
