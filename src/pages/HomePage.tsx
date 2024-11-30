@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import edificiosMobile from "../assets/edificios-mobile.svg";
@@ -13,6 +14,7 @@ import hands from "../assets/hands.svg";
 import worker from "../assets/worker.svg";
 import ingresos from "../assets/ingresos.svg";
 import logo from "../assets/logo-alticom.svg";
+import { servicesKey } from "./ServicesPage";
 import "../styles/homePage.css";
 
 const HomePage: FunctionComponent = () => {
@@ -28,6 +30,7 @@ const HomePage: FunctionComponent = () => {
 export default HomePage;
 
 const HomeContent: FunctionComponent = () => {
+  const navigate = useNavigate();
   const ourAdvantages: Array<{
     img: string;
     title: string;
@@ -96,28 +99,28 @@ const HomeContent: FunctionComponent = () => {
   const services: Array<{
     title: string;
     description: string;
-    href: string;
+    service: servicesKey;
     gridColumn: "1-5" | "5-9" | "9-13";
   }> = [
     {
       title: "Mantenimiento",
       description:
         "El plan garantiza el buen estado y funcionamiento de los ascensores, seguridad de los usuarios y operarios, disponibilidad de uso y cumplimiento de la normativa",
-      href: "",
+      service: servicesKey.mantenimiento,
       gridColumn: "1-5",
     },
     {
       title: "Reparaciones",
       description:
         "Actividad técnica ejecutada cuando sucede una falla y tiene como objetivo, restaurar el equipo para dejarlo en condiciones óptimas para el funcionamiento.",
-      href: "",
+      service: servicesKey.reparaciones,
       gridColumn: "5-9",
     },
     {
       title: "Modernización",
       description:
         "Permite extender la vida útil del equipo, haciendo de él un lugar más seguro y eficiente, mejora la calidad de los viajes y entrega mayor comodidad.",
-      href: "",
+      service: servicesKey.modernizacion,
       gridColumn: "9-13",
     },
   ];
@@ -135,7 +138,10 @@ const HomeContent: FunctionComponent = () => {
             actual de tus ascensores, sin costo.
           </p>
           <div className="home-page-schedule-visit-btn-container">
-            <button className="primary-button-style home-page-schedule-visit-btn">
+            <button
+              className="primary-button-style home-page-schedule-visit-btn"
+              onClick={() => navigate("/contactanos")}
+            >
               Agendar visita
             </button>
           </div>
@@ -188,7 +194,10 @@ const HomeContent: FunctionComponent = () => {
           >
             <h3 className="home-page-services-title">{s.title}</h3>
             <p className="home-page-services-description">{s.description}</p>
-            <a className="home-page-services-link" href={s.href}>
+            <a
+              className="home-page-services-link"
+              onClick={() => navigate(`/servicios?servicio=${s.service}`)}
+            >
               Conocer más
             </a>
           </div>
@@ -224,7 +233,10 @@ const HomeContent: FunctionComponent = () => {
             transparencia de nuestros informes, la calidad de nuestros servicios
             y precios competitivos que nos diferencian en el mercado.
           </p>
-          <a className="home-page-about-us-link-text" href="">
+          <a
+            className="home-page-about-us-link-text"
+            onClick={() => navigate("/contactanos")}
+          >
             Agendar visita
           </a>
         </div>

@@ -1,5 +1,6 @@
 import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { servicesKey } from "../pages/ServicesPage";
 import logo from "../assets/logo-alticom.svg";
 import "../styles/navbar.css";
 
@@ -51,7 +52,7 @@ const Navbar: FunctionComponent = () => {
 
   return (
     <div className="navbar-container">
-      <img src={logo} className="navbar-logo" />
+      <img src={logo} className="navbar-logo" onClick={() => navigate("/")} />
 
       {/* desktop */}
       <ul className="navbar-items-container">

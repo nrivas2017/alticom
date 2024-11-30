@@ -202,6 +202,7 @@
 }
 
 .home-page-services-link {
+  cursor: pointer;
   font-family: Roboto;
   font-size: 14px;
   font-weight: bold;
@@ -245,6 +246,7 @@
 }
 
 .home-page-about-us-link-text {
+  cursor: pointer;
   font-family: Roboto;
   font-size: 14px;
   font-weight: normal;

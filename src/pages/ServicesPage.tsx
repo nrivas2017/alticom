@@ -1,4 +1,4 @@
-import { FunctionComponent, useMemo, useState } from "react";
+import { FunctionComponent, useEffect, useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WrenchIcon from "../assets/wrench.svg";
@@ -7,7 +7,14 @@ import GearIcon from "../assets/gear.svg";
 import WrenchBoldIcon from "../assets/wrenchBold.svg";
 import LightbulbBoldIcon from "../assets/lightbulbBold.svg";
 import GearBoldIcon from "../assets/gearBold.svg";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/servicesPage.css";
+
+export enum servicesKey {
+  mantenimiento = "mantenimiento",
+  reparaciones = "reparaciones",
+  modernizacion = "modernizacion",
+}
 
 const ServicesPage: FunctionComponent = () => {
   return (
@@ -22,10 +29,11 @@ const ServicesPage: FunctionComponent = () => {
 export default ServicesPage;
 
 const ServicesContent: FunctionComponent = () => {
-  type buttonKey = "mantenimiento" | "reparaciones" | "modernizacion";
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const services: Array<{
-    key: buttonKey;
+    key: servicesKey;
     icon: string;
     activeIcon: string;
     label: string;
@@ -37,7 +45,7 @@ const ServicesContent: FunctionComponent = () => {
     }>;
   }> = [
     {
-      key: "mantenimiento",
+      key: servicesKey.mantenimiento,
       icon: GearIcon,
       activeIcon: GearBoldIcon,
       label: "Mantenimiento",
@@ -68,7 +76,7 @@ const ServicesContent: FunctionComponent = () => {
       ],
     },
     {
-      key: "reparaciones",
+      key: servicesKey.reparaciones,
       icon: WrenchIcon,
       activeIcon: WrenchBoldIcon,
       label: "Reparaciones",
@@ -88,7 +96,7 @@ const ServicesContent: FunctionComponent = () => {
       ],
     },
     {
-      key: "modernizacion",
+      key: servicesKey.modernizacion,
       icon: LightbulbIcon,
       activeIcon: LightbulbBoldIcon,
       label: "Modernización",
@@ -119,7 +127,19 @@ const ServicesContent: FunctionComponent = () => {
     [services]
   );
 
-  const [activeBtn, setActiveBtn] = useState<buttonKey>("mantenimiento");
+  const servicio = useMemo(() => {
+    window.scrollTo(0, 0);
+    const params = new URLSearchParams(location.search);
+    const serv = params.get("servicio");
+    if (serv) return serv as servicesKey;
+    return servicesKey.mantenimiento;
+  }, [location.search]);
+
+  const [activeBtn, setActiveBtn] = useState<servicesKey>(
+    servicesKey.mantenimiento
+  );
+
+  useEffect(() => setActiveBtn(servicio), [servicio]);
 
   return (
     <div className="services-page-content-container">
@@ -170,7 +190,12 @@ const ServicesContent: FunctionComponent = () => {
             ))}
         </div>
         <div className="services-page-contact-button-container">
-          <button className="primary-button-style">Contáctanos</button>
+          <button
+            className="primary-button-style"
+            onClick={() => navigate("/contactanos")}
+          >
+            Contáctanos
+          </button>
         </div>
       </div>
     </div>

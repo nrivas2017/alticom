@@ -1,8 +1,11 @@
 import { FunctionComponent } from "react";
 import logo from "../assets/logo-alticom-white.svg";
+import { useNavigate } from "react-router-dom";
+import { servicesKey } from "../pages/ServicesPage";
 import "../styles/footer.css";
 
 const Footer: FunctionComponent = () => {
+  const navigate = useNavigate();
   return (
     <div className="footer-container">
       <div className="footer-content-container">
@@ -16,13 +19,28 @@ const Footer: FunctionComponent = () => {
       </div>
       <div className="footer-content-container">
         <h3 className="footer-subtitle-text">Servicios</h3>
-        <a className="footer-underline-text" href="">
+        <a
+          className="footer-underline-text"
+          onClick={() =>
+            navigate(`/servicios?servicio=${servicesKey.mantenimiento}`)
+          }
+        >
           Mantenimiento
         </a>
-        <a className="footer-underline-text" href="">
+        <a
+          className="footer-underline-text"
+          onClick={() =>
+            navigate(`/servicios?servicio=${servicesKey.reparaciones}`)
+          }
+        >
           Reparaciones
         </a>
-        <a className="footer-underline-text" href="">
+        <a
+          className="footer-underline-text"
+          onClick={() =>
+            navigate(`/servicios?servicio=${servicesKey.modernizacion}`)
+          }
+        >
           Modernización
         </a>
       </div>

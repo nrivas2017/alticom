@@ -7,6 +7,7 @@ import Modal from "../components/Modal";
 import "../styles/contactPage.css";
 
 const ContactPage: FunctionComponent = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <div className="contact-page-container">
       <Navbar />
