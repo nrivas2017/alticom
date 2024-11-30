@@ -1,0 +1,125 @@
+.services-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page-content-container {
+  flex-grow: 1;
+}
+
+.services-page-section-container {
+  width: 100%;
+  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px 28px;
+}
+
+.services-page-title-container {
+  grid-column: 1/13;
+}
+
+.services-page-title {
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.services-page-buttons-container {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.services-page-details-container {
+  grid-column: 5/13;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.services-page-details-title {
+  font-size: 24px;
+}
+
+.services-page-details-description {
+  font-size: 16px;
+}
+
+.services-page-details-list-title {
+  font-size: 16px;
+}
+
+.services-page-details-list-container {
+  list-style-position: outside;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.services-page-details-list-item {
+  margin: 4px 0;
+}
+
+.services-page-contact-button-container {
+  grid-column: 1/13;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .services-page-section-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-page-title-container {
+    display: none;
+  }
+
+  .services-page-buttons-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .services-page-button-img {
+    display: none;
+  }
+
+  .services-page-button {
+    padding: 10px !important;
+    font-size: 14px !important;
+  }
+
+  .services-page-details-title {
+    font-size: 20px;
+  }
+
+  .services-page-details-description,
+  .services-page-details-list-title,
+  .services-page-details-list-item {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,337 @@
+.home-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-content-container {
+  flex-grow: 1;
+}
+
+.home-page-section-container {
+  width: 100%;
+  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px 28px;
+}
+
+.home-page-title-container {
+  grid-column: 1/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 80px;
+  gap: 20px;
+}
+
+.home-page-edificios-img {
+  grid-column: 7/13;
+  width: 100%;
+}
+
+.home-page-edificios-mobile-img {
+  display: none;
+}
+
+.home-page-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-title > h1 {
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+  margin: 0;
+}
+
+.home-page-description {
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+  margin: 0;
+}
+
+.home-page-section-title-container {
+  grid-column: 1/13;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-page-section-title {
+  white-space: nowrap;
+  align-self: stretch;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.home-page-divider-line {
+  background-color: #000;
+  height: 4px;
+  width: 100%;
+}
+
+.home-page-our-advantages-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 170px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #f6f6f6;
+}
+
+.home-page-our-advantages-container-1-5 {
+  grid-column: 1/5;
+}
+.home-page-our-advantages-container-5-9 {
+  grid-column: 5/9;
+}
+.home-page-our-advantages-container-9-13 {
+  grid-column: 9/13;
+}
+
+.home-page-our-advantages-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0;
+}
+
+.home-page-our-advantages-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+  margin: 0;
+}
+
+.home-page-our-advantages-description {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a2133;
+  margin: 0;
+}
+
+.home-page-services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 12px;
+  border: solid 1px #ebedf0;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.home-page-services-container-1-5 {
+  grid-column: 1/5;
+}
+.home-page-services-container-5-9 {
+  grid-column: 5/9;
+}
+.home-page-services-container-9-13 {
+  grid-column: 9/13;
+}
+
+.home-page-services-title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.home-page-services-description {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.home-page-services-link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00ace4;
+}
+
+.home-page-about-us-logo-img-container {
+  grid-column: 1/6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-about-us-logo-img {
+  width: 100%;
+}
+
+.home-page-about-us-text-container {
+  grid-column: 6/13;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-page-about-us-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.home-page-about-us-link-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #00ace4;
+}
+
+@media (max-width: 768px) {
+  .home-page-section-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+  }
+
+  .home-page-title-container {
+    width: 100%;
+  }
+
+  .home-page-title-container {
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .home-page-schedule-visit-btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .home-page-schedule-visit-btn {
+    z-index: 3;
+  }
+
+  .home-page-edificios-img {
+    display: none;
+  }
+
+  .home-page-edificios-mobile-img {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .home-page-divider-line {
+    display: none;
+  }
+
+  .home-page-our-advantages-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-page-our-advantages-container {
+    min-height: 120px;
+  }
+
+  .home-page-services-container {
+    padding: 16px;
+  }
+
+  .home-page-our-advantages-container-1-5,
+  .home-page-our-advantages-container-5-9,
+  .home-page-our-advantages-container-9-13,
+  .home-page-services-container-1-5,
+  .home-page-services-container-5-9,
+  .home-page-services-container-9-13 {
+    grid-column: 1/6;
+  }
+
+  .home-page-about-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

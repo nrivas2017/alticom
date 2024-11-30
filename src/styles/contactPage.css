@@ -1,0 +1,158 @@
+.contact-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-content-container {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-section-container {
+  padding: 40px;
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-page-title {
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #18273c;
+}
+
+.contact-page-description {
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #18273c;
+}
+
+.contact-page-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page-grouping-horizontal-input {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contact-page-grouping-radio-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-input-container > label {
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.contact-page-form-action-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contact-page-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 40px;
+}
+
+.contact-page-modal-title {
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18273c;
+}
+
+.contact-page-modal-text {
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #18273c;
+}
+
+@media (max-width: 768px) {
+  .contact-page-section-container {
+    padding: 10px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .contact-page-grouping-radio-input {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact-page-grouping-horizontal-input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .contact-page-grouping-horizontal-input .input-container-style {
+    width: 50%;
+  }
+}
