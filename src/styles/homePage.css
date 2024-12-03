@@ -11,7 +11,7 @@
 
 .home-page-section-container {
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 120px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px 28px;
@@ -44,7 +44,7 @@
   align-self: stretch;
   flex-grow: 0;
   font-family: Roboto;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
   font-stretch: condensed;
   font-style: normal;
@@ -81,8 +81,8 @@
 .home-page-section-title {
   white-space: nowrap;
   align-self: stretch;
-  font-family: Roboto;
-  font-size: 22px;
+  font-family: "Roboto Slab";
+  font-size: 26px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -105,10 +105,14 @@
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  padding: 16px 24px;
+  gap: 15px;
+  padding: 16px 22px;
   border-radius: 12px;
   background-color: #f6f6f6;
+}
+
+.home-page-our-advantages-img {
+  width: 25%;
 }
 
 .home-page-our-advantages-container-1-5 {
@@ -131,8 +135,8 @@
 }
 
 .home-page-our-advantages-title {
-  font-family: Roboto;
-  font-size: 18px;
+  font-family: "Roboto Slab";
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -145,7 +149,7 @@
 
 .home-page-our-advantages-description {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -178,8 +182,8 @@
 }
 
 .home-page-services-title {
-  font-family: Roboto;
-  font-size: 20px;
+  font-family: "Roboto Slab";
+  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -191,7 +195,7 @@
 
 .home-page-services-description {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -204,7 +208,7 @@
 .home-page-services-link {
   cursor: pointer;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -212,6 +216,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #00ace4;
+  text-decoration: underline;
 }
 
 .home-page-about-us-logo-img-container {
@@ -235,7 +240,7 @@
 
 .home-page-about-us-text {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -248,7 +253,7 @@
 .home-page-about-us-link-text {
   cursor: pointer;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -335,5 +340,33 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .home-page-title > h1 {
+    font-size: 28px;
+  }
+
+  .home-page-services-link {
+    font-size: 14px;
+  }
+
+  .home-page-section-title {
+    font-size: 22px;
+  }
+
+  .home-page-our-advantages-title {
+    font-size: 17px;
+  }
+
+  .home-page-our-advantages-description {
+    font-size: 14px;
+  }
+
+  .home-page-services-title {
+    font-size: 20px;
+  }
+
+  .home-page-services-description {
+    font-size: 14px;
   }
 }

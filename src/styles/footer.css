@@ -1,5 +1,5 @@
 .footer-container {
-  padding: 40px 100px;
+  padding: 40px 120px;
   background-color: #18273c;
   width: 100%;
   color: #fff;
@@ -24,7 +24,7 @@
 .footer-underline-text {
   cursor: pointer;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: normal;
   text-decoration: underline;
@@ -32,9 +32,17 @@
 }
 
 .footer-subtitle-text {
-  font-size: 20px;
-  line-height: 28px;
-  text-decoration: none;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
   margin: 0;
 }
 
@@ -44,7 +52,7 @@
 }
 
 .footer-contact-text {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 23.04px;
   text-decoration: none;
   margin: 0;

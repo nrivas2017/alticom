@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 100px;
+  padding: 8px 120px;
   border-bottom: 1px solid #d6d6d5;
 }
 
@@ -58,9 +58,13 @@
   color: #18273c;
   cursor: pointer;
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 26px;
   border-top: 1px solid #00ace4;
-  padding: 10px;
+  padding: 15px 20px;
+}
+
+.navbar-menu-item-actived {
+  font-weight: bold;
 }
 
 .navbar-menu-item:nth-child(1) {
@@ -74,10 +78,14 @@
   user-select: none;
 }
 
+.navbar-menu-toggle > span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (max-width: 768px) {
   .navbar-container {
     height: 10vh;
-    padding: 8px 10px;
+    padding: 8px 20px;
   }
 
   .navbar-menu-toggle {

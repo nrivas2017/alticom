@@ -122,7 +122,7 @@ const ContactContent: FunctionComponent = () => {
             />
 
             <TextInput
-              type="number"
+              type="tel"
               label="Número de contacto"
               fixedText="+56"
               placeholder="9876 54321"

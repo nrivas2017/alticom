@@ -36,15 +36,15 @@ const Navbar: FunctionComponent = () => {
     path: string;
   }> = [
     {
-      label: "Home",
+      label: "home",
       path: "/",
     },
     {
-      label: "Servicios",
+      label: "servicios",
       path: "/servicios",
     },
     {
-      label: "Contáctanos",
+      label: "contáctanos",
       path: "/contactanos",
     },
   ];
@@ -70,7 +70,9 @@ const Navbar: FunctionComponent = () => {
 
       {/* mobile */}
       <div ref={buttonRef} className="navbar-menu-toggle" onClick={toggleMenu}>
-        <span>☰</span>
+        <span style={isMenuOpen ? { marginRight: "4px" } : {}}>
+          {isMenuOpen ? "x" : "☰"}
+        </span>
       </div>
 
       <div
