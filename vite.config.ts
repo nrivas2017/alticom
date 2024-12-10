@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     host: true,
   },
-  base: "/alticom", //TODO: This is just to be able to deploy the app to Github. Remove this from here (or change it to '/') and also from the 'basename' in the <BrowserRouter> tag of the './src/App.tsx' file.
+  base: "/",
   build: {
     outDir: "dist",
   },

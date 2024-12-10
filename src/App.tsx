@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter
       future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-      basename="/alticom" //TODO: This is just to be able to deploy the app to Github. Remove this from here and also from the './../vite.config.ts' file base.
+      basename="/"
     >
       <Routes>
         <Route path="/" element={<HomePage />} />

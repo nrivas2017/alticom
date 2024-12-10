@@ -1,15 +1,11 @@
 {
-  "homepage": "https://nrivas2017.github.io/alticom",
   "name": "alticom",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "author": "Nicolas Rivas",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite"
   },
   "dependencies": {
     "axios": "^1.7.7",
